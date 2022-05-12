@@ -1,6 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-import Terminal, { ColorMode, LineType } from 'react-terminal-ui';
 
 function App() {
   return (
