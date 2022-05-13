@@ -1,9 +1,9 @@
 import './App.css';
 //import 'terminal-in-react/lib/css/index.css';
 import Terminal from 'react-bash';
-import mmlogo from './Components/metamask-fox.svg'
+//import mmlogo from './Components/metamask-fox.svg'
 import * as React from 'react';
-import Button from '@mui/material/Button';
+//import Button from '@mui/material/Button';
 
 
 
