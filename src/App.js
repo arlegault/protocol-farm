@@ -20,14 +20,17 @@ const extensions = {
     },
 };
 
+
+
 const history = [
-    { value: 'Connecting to the blockchain' },
+    { value: 'Connecting to the blockchain...' },
     { value: '.....' },
     { value: '.....' },
-    { value: 'Success.' },
-    { value: '    ' },
-    { value: 'Submit your protocol, user.' },
-    { value: 'Type `help` to begin' },
+    { value: 'Success. Initializing protocol farm' },
+    { value: '.....' },
+    { value: 'Protocol Map Incomplete! Exit code 126' },
+    { value: '.' },
+    { value: 'Submit protocol to recover' },
 ];
 
 const structure = {
@@ -38,6 +41,8 @@ const structure = {
             file: { content: ' http://oncyber.io/schrutefarms' },
         },
         '.secrets': { content: 'Clownana' },
+        '.origins': { content: '1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa' },
+
     },
     public: {
         JetProtocol: { content: 'a decentralized protocol for borrowing and lending on the Solana Blockchain' },
@@ -58,7 +63,7 @@ const structure = {
 
 
 
-        <Terminal history={history} extensions={extensions} structure={structure} />
+        <Terminal history={history} extensions={extensions} structure={structure} theme= 'dark' prefix= 'hacker@1A1zP1' />
         <p>
          Coming Soon.
         </p>
