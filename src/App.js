@@ -1,10 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 //import 'terminal-in-react/lib/css/index.css';
 import Terminal from 'react-bash';
 import mmlogo from './Components/metamask-fox.svg'
 import * as React from 'react';
-import Navbar from 'react-bootstrap/Navbar'
 import Button from '@mui/material/Button';
 
 
@@ -58,15 +56,6 @@ const structure = {
       <header className="App-header">
 
 
-<Button
-    variant="contained"
-    color="info"
-     style={{
-                position: 'absolute',
-                right: 5,
-                top: 5,
-          }}
-    endIcon={<img src={mmlogo} />} disabled> Connect wallet</Button>
 
 
         <Terminal history={history} extensions={extensions} structure={structure} />
