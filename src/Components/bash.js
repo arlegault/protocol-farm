@@ -2,14 +2,8 @@ import * as Util from './util';
 import { Errors } from './const';
 import * as BaseCommands from './commands';
 import * as BashParser from './parser';
-import HistoryContext from "./HistoryContext";
-import React, { Component, useContext, useState, useEffect } from 'react';
-
-
 
 export default class Bash {
-
-static contextType = HistoryContext;
 
     constructor(extensions = {}) {
         this.commands = Object.assign(extensions, BaseCommands);
@@ -28,8 +22,6 @@ static contextType = HistoryContext;
     execute(input, currentState) {
         this.prevCommands.push(input);
         this.prevCommandsIndex = this.prevCommands.length;
-        console.log(input);
-      //  this.context.setGlobalHistory(input)
 
         // Append input to history
         const newState = Object.assign({}, currentState, {
