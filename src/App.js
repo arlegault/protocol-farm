@@ -1,22 +1,10 @@
 import './App.css';
-import Terminal from 'react-bash';
+import Terminal from './Components/component.js';
 import WhiteList from './Components/whitelist.js'
 import Container from '@mui/material/Container';
 //import mmlogo from './Components/metamask-fox.svg'
-import * as React from 'react';
+import React, { useState } from 'react';
 
-
-function App() {
-
-const extensions = {
-    sudo: {
-        exec: ({ structure, history, cwd }) => {
-            return { structure, cwd,
-                history: history.concat({ value: 'FATAL ERROR: Satoshi not found. Exit Code: 128+n' }),
-            };
-        },
-    },
-};
 
 const styles = {
     header : {padding: '0px 0px 0',},
@@ -26,7 +14,7 @@ const styles = {
     yellowCircle : {backgroundColor: '#000',},
 };
 
-const history = [
+const initialHistory = [
     { value: 'Connecting to 0x321162Cd933E2Be498Cd2267a90534A804051b11' },
     { value: '.....' },
     { value: '.....' },
@@ -60,15 +48,32 @@ const structure = {
      'Whitelist.md': { content: 'Access Granted: 3 12 15 23 14'},
 };
 
-//console.log(this.state)
+const extensions = {
+    sudo: {
+        exec: ({ structure, history, cwd }) => {
+            return { structure, cwd,
+                history: history.concat({ value: 'FATAL ERROR: Satoshi not found. Exit Code: 128+n' }),
+            };
+        },
+    },
+};
+
+function App() {
+const [history, setHistory] = useState(initialHistory);
 
   return (
-
     <div className="App">
       <header className="App-header">
-        <div></div>
       <Container maxWidth="sm" sx={{ maxHeight: '75%' }}>
-        <Terminal styles={styles} history={history} extensions={extensions} structure={structure} theme= 'dark' prefix= 'hacker@1A1zP1' />
+        <Terminal
+            styles={styles}
+            history={history}
+            extensions={extensions}
+            structure={structure}
+            theme='dark'
+            prefix='hacker@1A1zP1'
+            setHistory={setHistory}
+         />
         </Container>
         <WhiteList history={history} />
 
