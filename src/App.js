@@ -1,5 +1,5 @@
 import './App.css';
-import Terminal from './Components/component.js';
+import Terminal from './Components/Terminal.js';
 import WhiteList from './Components/whitelist.js'
 import Container from '@mui/material/Container';
 //import mmlogo from './Components/metamask-fox.svg'

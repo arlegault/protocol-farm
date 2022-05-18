@@ -61,7 +61,7 @@ BaseStyles.prefix = {
     marginRight: '5px',
 };
 
-export default {
+export default BaseStyles{
     light: Object.assign({}, BaseStyles, {
         body: Object.assign({}, BaseStyles.body, {
             backgroundColor: '#fff',
