@@ -2,10 +2,9 @@
 body {
   margin: 0;
   background : #000;
-  font-color: #57d51f;
-  font-family: source-code-pro, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-color: #00FF66;
+  font-size: calc(12px + 2vmin);
+  font-family: 'VT323';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 

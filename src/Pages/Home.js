@@ -5,6 +5,7 @@ import SubmitProtocol from '../Components/SubmitProtocol.js'
 import OpenMegastructures from '../Components/OpenMegastructures.js'
 import Donate from '../Components/Donate.js'
 import OpenLPAlpha from '../Components/OpenLPAlpha.js'
+import OpenProtocolsPage from '../Components/OpenProtocolsPage.js'
 import Container from '@mui/material/Container';
 //import mmlogo from './Components/metamask-fox.svg'
 import React, { useState } from 'react';
@@ -14,7 +15,7 @@ import React, { useState } from 'react';
 
 const styles = {
     header : {padding: '0px 0px 0',},
-    prefix : {color: '#57d51f',},
+    prefix : {color: '#00FF66',},
     redCircle : {backgroundColor: '#000',},
     greenCircle : {backgroundColor: '#000',},
     yellowCircle : {backgroundColor: '#000',},
@@ -46,11 +47,7 @@ const structure = {
 
 
     },
-    protocolList: {
-        JetProtocol: { content: 'a decentralized protocol for borrowing and lending on the Solana Blockchain' },
-        Oxsplits: { content: '0xSplits is an open-source, audited, and non-upgradeable protocol for efficiently splitting onchain income. Whenever a Split receives funds, each recipient gets their share. Simple enough for friends, secure enough for anons.' },
-        Syndicate: { content: 'Syndicate is revolutionizing investing by changing how communities and capital work together through accessible, effortless, and social web3 technologies.' },
-    },
+    'newProtocols.exe': { content: '01101011 01100101 01111001'},
     'submitProtocol.exe': { content: 'Access Granted: 19 21 2 13 9 20' },
     liquidityProviderAlpha: { content: '$$$$$$$$' },
     'README.md': { content: 'protocol-farm helps new protocols get discovered to ensure that WAGMI. Sign up on the whitelist to get early access. Submit a protocol to get points. Points will have value later. ' },
@@ -75,7 +72,7 @@ const [history, setHistory] = useState(initialHistory);
         <div className="App">
       <header className="App-header">
       <Donate history={history} />
-      <Container maxWidth="sm" sx={{ maxHeight: '75%' }}>
+      <Container maxWidth="md" sx={{ maxHeight: '75%' }}>
         <Terminal
             styles={styles}
             history={history}
@@ -90,6 +87,7 @@ const [history, setHistory] = useState(initialHistory);
         <SubmitProtocol history={history} />
         <OpenMegastructures history={history} />
         <OpenLPAlpha history={history} />
+        <OpenProtocolsPage history={history} />
 
 </header>
     </div>

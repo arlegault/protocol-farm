@@ -5,7 +5,7 @@ BaseStyles.ReactBash = {
     display: 'flex',
     flexDirection: 'column',
     fontFamily: '\'Inconsolata\', monospace',
-    fontSize: '13px',
+    fontSize: 'calc(10px + 1vmin)',
     fontWeight: '400',
     height: '100%',
     overflow: 'hidden',
