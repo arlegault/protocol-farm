@@ -3,10 +3,13 @@ import Terminal from '../Components/Terminal.js';
 import WhiteList from '../Components/whitelist.js'
 import SubmitProtocol from '../Components/SubmitProtocol.js'
 import OpenMegastructures from '../Components/OpenMegastructures.js'
+import Donate from '../Components/Donate.js'
 import OpenLPAlpha from '../Components/OpenLPAlpha.js'
 import Container from '@mui/material/Container';
 //import mmlogo from './Components/metamask-fox.svg'
 import React, { useState } from 'react';
+
+// TODO: stop being lazy and make all conditional components one thing
 
 
 const styles = {
@@ -36,6 +39,7 @@ const structure = {
             file: { content:'http://oncyber.io/schrutefarms' },
         },
         '.secrets': { content: 'Clownana' },
+        '.wen_token_ser': { content: 'submit some protocols and maybe you will get lucky' },
         '.hyperstructures': { content: 'Access Granted: 8 25 16 5 18 19 20 18 21 3 20 21 18 5 19' },
         '.origins': { content: '1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa' },
         '.builtBy': { content: 'alexlegault.eth' },
@@ -51,6 +55,7 @@ const structure = {
     liquidityProviderAlpha: { content: '$$$$$$$$' },
     'README.md': { content: 'protocol-farm helps new protocols get discovered to ensure that WAGMI. Sign up on the whitelist to get early access. Submit a protocol to get points. Points will have value later. ' },
      'whiteList.exe': { content: 'Access Granted: 3 12 15 23 14'},
+      'supportThisProject.exe': { content: 'Access Granted: 4 15 14 1 20 5'},
 };
 
 const extensions = {
@@ -69,6 +74,7 @@ const [history, setHistory] = useState(initialHistory);
   return (
         <div className="App">
       <header className="App-header">
+      <Donate history={history} />
       <Container maxWidth="sm" sx={{ maxHeight: '75%' }}>
         <Terminal
             styles={styles}
@@ -83,7 +89,7 @@ const [history, setHistory] = useState(initialHistory);
         <WhiteList history={history} />
         <SubmitProtocol history={history} />
         <OpenMegastructures history={history} />
-         <OpenLPAlpha history={history} />
+        <OpenLPAlpha history={history} />
 
 </header>
     </div>
