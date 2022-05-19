@@ -47,13 +47,13 @@ BaseStyles.form = {
 };
 
 BaseStyles.input = {
-    background: 'none',
+    background: '#1a0000',
     border: 'none',
     color: 'inherit',
-    flexGrow: '1',
+    flexGrow: '.4',
     fontFamily: 'inherit',
     fontSize: 'inherit',
-    outline: 'none !important',
+    outline: 'none',
     padding: 0,
 };
 
