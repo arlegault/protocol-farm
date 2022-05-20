@@ -22,12 +22,9 @@ const initialHistory = [
 ];
 
 const structure = {
-    '.hidden': {
+    '.hiddenDir': {
         GorillaDEX: { content: '.' },
         ClownCoin: { content: 'CLWN is a stableclown that randomly changes its value every 10 minutes' },
-        dir2: {
-            file: { content:'http://oncyber.io/schrutefarms' },
-        },
         '.secrets': { content: 'Clownana' },
         '.wen_token_ser': { content: 'submit some protocols and maybe you will get lucky' },
         '.hyperstructures': { content: 'Access Granted: 8 25 16 5 18 19 20 18 21 3 20 21 18 5 19' },

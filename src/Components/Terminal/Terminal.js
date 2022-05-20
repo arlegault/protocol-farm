@@ -11,8 +11,6 @@ const C_CHAR_CODE = 67;
 const UP_CHAR_CODE = 38;
 const DOWN_CHAR_CODE = 40;
 const TAB_CHAR_CODE = 9;
-const noop = () => {};
-
 
 export default class Terminal extends Component {
 
@@ -148,7 +146,7 @@ export default class Terminal extends Component {
     }
 
     render() {
-        const { onClose, onExpand, onMinimize, prefix, styles, theme } = this.props;
+        const { prefix, styles, theme } = this.props;
         const { history, cwd } = this.state;
         const style = Object.assign({}, Styles[theme] || Styles.light, styles);
 
