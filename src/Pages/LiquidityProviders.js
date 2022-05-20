@@ -1,5 +1,5 @@
 import React from "react";
-import PlaceHolderTable from '../Components/PlaceHolderTable.js'
+import PlaceHolderTable from '../Components/LPPageComponents/PlaceHolderTable.js'
 //Functional Component
 const LiquidityProviders = () => {
   return (

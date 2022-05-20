@@ -6,8 +6,8 @@ export const Errors = {
     COMMAND_NOT_FOUND: '-bash: $1: command not found. Type help for available commands.',
     FILE_EXISTS: 'mkdir: $1: File exists',
     NO_SUCH_FILE: '-bash: cd: $1: No such file or directory',
-    NOT_A_DIRECTORY: '-bash: cd: $1: Not a directory',
-    IS_A_DIRECTORY: 'cat: $1: Is a directory',
+    NOT_A_DIRECTORY: '-bash: cd: $1: Not a directory. Try cat',
+    IS_A_DIRECTORY: 'cat: $1: Is a directory. Try cd',
 };
 
 export const EnvVariables = {

@@ -1,11 +1,8 @@
 import '../App.css';
-import Terminal from '../Components/Terminal.js';
-import WhiteList from '../Components/whitelist.js'
-import SubmitProtocol from '../Components/SubmitProtocol.js'
-import OpenMegastructures from '../Components/OpenMegastructures.js'
-import Donate from '../Components/Donate.js'
-import OpenLPAlpha from '../Components/OpenLPAlpha.js'
-import OpenProtocolsPage from '../Components/OpenProtocolsPage.js'
+import Terminal from '../Components/Terminal/Terminal.js';
+import WhiteList from '../Components/TriggeredFromTerminalHistory/WhiteList.js'
+import Donate from '../Components/TriggeredFromTerminalHistory/Donate.js'
+import OpenLinksFromTerminalHistory from '../Components/TriggeredFromTerminalHistory/OpenLinksFromTerminalHistory.js'
 import Container from '@mui/material/Container';
 //import mmlogo from './Components/metamask-fox.svg'
 import React, { useState } from 'react';
@@ -22,14 +19,15 @@ const styles = {
 };
 
 const initialHistory = [
-    { value: 'Connecting to 0x321162Cd933E2Be498Cd2267a90534A804051b11' },
+    { value: 'Last login: Sat Jan 3 2009 18:15:05'},
+    { value: 'Connecting to 0x000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f' },
     { value: '.....' },
     { value: '.....' },
-    { value: 'Success. Initializing protocol farm' },
+    { value: 'Success. Initializing protocol farm.' },
     { value: '.....' },
-    { value: 'Protocol Map Incomplete! Exit code 126' },
-    { value: '.' },
-    { value: 'Submit protocol to recover' },
+    { value: 'ERR Protocol Map Incomplete! Must index all protocols.' },
+    { value: '.....' },
+    { value: 'Type help to begin' },
 ];
 
 const structure = {
@@ -47,12 +45,12 @@ const structure = {
 
 
     },
-    'newProtocols.exe': { content: '01101011 01100101 01111001'},
-    'submitProtocol.exe': { content: 'Access Granted: 19 21 2 13 9 20' },
-    liquidityProviderAlpha: { content: '$$$$$$$$' },
+    'protocols.sh': { content: '01101011 01100101 01111001'},
+    'submitProtocol.sh': { content: 'Access Granted: 19 21 2 13 9 20' },
+    'liquidityProvider.sh': { content: '$$$$$$$$' },
     'README.md': { content: 'protocol-farm helps new protocols get discovered to ensure that WAGMI. Sign up on the whitelist to get early access. Submit a protocol to get points. Points will have value later. ' },
-     'whiteList.exe': { content: 'Access Granted: 3 12 15 23 14'},
-      'supportThisProject.exe': { content: 'Access Granted: 4 15 14 1 20 5'},
+    'supportThisProject.sol': { content: 'Access Granted: 4 15 14 1 20 5'},
+    'whiteList.sh': { content: 'Access Granted: 3 12 15 23 14'},
 };
 
 const extensions = {
@@ -84,11 +82,7 @@ const [history, setHistory] = useState(initialHistory);
          />
         </Container>
         <WhiteList history={history} />
-        <SubmitProtocol history={history} />
-        <OpenMegastructures history={history} />
-        <OpenLPAlpha history={history} />
-        <OpenProtocolsPage history={history} />
-
+        <OpenLinksFromTerminalHistory history={history} />
 </header>
     </div>
 

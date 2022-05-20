@@ -1,7 +1,7 @@
 import * as Util from './util';
 import { Errors } from './const';
 
-const helpCommands = ['clear', 'ls', 'cat', 'mkdir', 'cd', 'pwd', 'echo', 'printenv', 'whoami', 'rm'];
+const helpCommands = ['ls - lists files and directories', 'cat - read files', 'cd - change directories ', 'pwd', 'echo', 'printenv', 'whoami'];
 
 export const help = {
     exec: (state) => {

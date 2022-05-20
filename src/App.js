@@ -1,5 +1,5 @@
 import './App.css';
-import Main from './Components/Main.js'
+import Main from './Main.js'
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import VT323 from './Fonts/VT323-Regular.ttf'
 

@@ -14,11 +14,18 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
+const protocols = {
+            name: 'Jet Protocol',
+            desc: 'a decentralized protocol for borrowing and lending on the Solana Blockchain',
+            link: "https://www.jetprotocol.io/",
+            url: 'www.jetprotocol.io',
+        };
+
 export default function ProtocolCardList() {
   return (
     <Box sx={{ width: '100%' }}>
       <Stack spacing={2}>
-        <Item> <ProtocolListItem/> </Item>
+        <Item> <ProtocolListItem protocols={protocols}/> </Item>
         <Item>Syndicate.io</Item>
         <Item>0xSplits</Item>
       </Stack>

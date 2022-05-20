@@ -1,9 +1,9 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import Home from '../Pages/Home.js';
-import Protocols from '../Pages/Protocols.js';
-import LiquidityProviders from '../Pages/LiquidityProviders.js';
+import Home from './Pages/Home.js';
+import Protocols from './Pages/Protocols.js';
+import LiquidityProviders from './Pages/LiquidityProviders.js';
 
 
 const Main = () => {

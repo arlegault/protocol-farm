@@ -10,22 +10,24 @@ const Item = styled(Paper)(({ theme }) => ({
   textAlign: 'center',
 }));
 
-export default function ProtocolListItem() {
+
+export default function ProtocolListItem(props) {
+console.log(props.protocols.name)
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid container wrap='nowrap' spacing={2} columns={16}>
 
         <Grid item xs={3}>
-          <Item>Jet Protocol</Item>
+          <Item>{props.protocols.name}</Item>
         </Grid>
 
         <Grid item xs={12}>
-          <Item>a decentralized protocol for borrowing and lending on the Solana Blockchain</Item>
+          <Item>{props.protocols.desc}</Item>
         </Grid>
 
          <Grid item xs={3}>
           <Item>
-          <a href="https://www.jetprotocol.io/">www.jetprotocol.io</a>
+          <a href={props.protocols.link}>{props.protocols.url}</a>
           </Item>
         </Grid>
 
