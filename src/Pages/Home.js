@@ -4,19 +4,10 @@ import WhiteList from '../Components/TriggeredFromTerminalHistory/WhiteList.js'
 import Donate from '../Components/TriggeredFromTerminalHistory/Donate.js'
 import OpenLinksFromTerminalHistory from '../Components/TriggeredFromTerminalHistory/OpenLinksFromTerminalHistory.js'
 import Container from '@mui/material/Container';
-//import mmlogo from './Components/metamask-fox.svg'
 import React, { useState } from 'react';
 
 // TODO: stop being lazy and make all conditional components one thing
 
-
-const styles = {
-    header : {padding: '0px 0px 0',},
-    prefix : {color: '#00FF66',},
-    redCircle : {backgroundColor: '#000',},
-    greenCircle : {backgroundColor: '#000',},
-    yellowCircle : {backgroundColor: '#000',},
-};
 
 const initialHistory = [
     { value: 'Last login: Sat Jan 3 2009 18:15:05'},
@@ -72,12 +63,9 @@ const [history, setHistory] = useState(initialHistory);
       <Donate history={history} />
       <Container maxWidth="md" sx={{ maxHeight: '75%' }}>
         <Terminal
-            styles={styles}
             history={history}
             extensions={extensions}
             structure={structure}
-            theme='dark'
-            prefix='hacker@1A1zP1'
             setHistory={setHistory}
          />
         </Container>

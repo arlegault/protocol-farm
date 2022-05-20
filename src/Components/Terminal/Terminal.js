@@ -154,11 +154,6 @@ export default class Terminal extends Component {
 
         return (
             <div className="ReactBash" style={style.ReactBash}>
-                <div style={style.header}>
-                    <span style={style.redCircle} onClick={onClose}></span>
-                    <span style={style.yellowCircle} onClick={onMinimize}></span>
-                    <span style={style.greenCircle} onClick={onExpand}></span>
-                </div>
                 <div style={style.body} onClick={() => this.refs.input.focus()}>
                     {history.map(this.renderHistoryItem(style))}
 
@@ -182,16 +177,12 @@ export default class Terminal extends Component {
 
 
 Terminal.Themes = {
-    LIGHT: 'light',
     DARK: 'dark',
 };
 
 Terminal.propTypes = {
     extensions: PropTypes.object,
     history: PropTypes.array,
-    onClose: PropTypes.func,
-    onExpand: PropTypes.func,
-    onMinimize: PropTypes.func,
     prefix: PropTypes.string,
     structure: PropTypes.object,
     styles: PropTypes.object,
@@ -201,11 +192,8 @@ Terminal.propTypes = {
 Terminal.defaultProps = {
     extensions: {},
     history: [],
-    onClose: noop,
-    onExpand: noop,
-    onMinimize: noop,
-    prefix: 'hacker@default',
+    prefix: 'hacker@1A1zP1',
     structure: {},
     styles: {},
-    theme: Terminal.Themes.LIGHT,
+    theme: Terminal.Themes.DARK,
 };
