@@ -154,7 +154,6 @@ export default class Terminal extends Component {
             <div className="ReactBash" style={style.ReactBash}>
                 <div style={style.body} onClick={() => this.refs.input.focus()}>
                     {history.map(this.renderHistoryItem(style))}
-
                     <form onSubmit={evt => this.handleSubmit(evt) } style={style.form} >
                         <span style={style.prefix}>{`${prefix} ~${cwd} $`}</span>
                         <input

@@ -14,20 +14,36 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
-const protocols = {
+const protocols = [
+        {
             name: 'Jet Protocol',
             desc: 'a decentralized protocol for borrowing and lending on the Solana Blockchain',
             link: "https://www.jetprotocol.io/",
             url: 'www.jetprotocol.io',
-        };
+        },
+         {
+            name: 'Syndicate',
+            desc: 'Transform any wallet into a powerful web3 investment club',
+            link: "https://syndicate.io/",
+            url: 'www.syndicate.io',
+        },
+        {
+            name: '0xSplits',
+            desc: '0xSplits is an open-source, audited, and non-upgradeable protocol for efficiently splitting onchain income.',
+            link: "https://www.0xsplits.xyz/",
+            url: 'www.0xsplits.xyz',
+        },
+        ];
 
 export default function ProtocolCardList() {
+
+
   return (
     <Box sx={{ width: '100%' }}>
       <Stack spacing={2}>
-        <Item> <ProtocolListItem protocols={protocols}/> </Item>
-        <Item>Syndicate.io</Item>
-        <Item>0xSplits</Item>
+      {protocols.map(function(protocol, index){
+            return <Item key={index}> <ProtocolListItem protocols={protocol}/></Item>;
+            })}
       </Stack>
     </Box>
   );
