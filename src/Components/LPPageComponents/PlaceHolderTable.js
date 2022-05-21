@@ -29,7 +29,7 @@ export default function PlaceHolderTable() {
   return (
     <TableContainer sx={{ minWidth: 650, maxWidth: 3/4 }} component={Paper}>
       <Table  aria-label="simple table">
-        <TableHead style={{backgroundColor:'#00FF66', color: 'black',}}>
+        <TableHead sx={{ bgcolor:'#00FF66', color: '#000',}}>
           <TableRow>
             <TableCell>Liquidity Provider</TableCell>
             <TableCell align="right">Count of Pools</TableCell>

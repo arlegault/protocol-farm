@@ -1,0 +1,14 @@
+protocol_name,first_contract_created_date,contract_address_eth,contract_address_sol,contract address_polygon,founders,short_description,long_description,url,whitepaper_link,twitter,discord,contract_interactions,wen_token
+Syndicate,2022-01-25,0x99116a5641DC89A7cb43a9A82694177538aa0391,,,"Ian Lee, Will Papper",Transform any wallet into a powerful web3 investment club,"Today’s models for investing are leaving many people out of what gets built in the world—by whom, for whom, and where.
+Syndicate democratizes investing—empowering communities to raise and invest capital like never before. It’s a future that's more open, free, and fair.",https://syndicate.io/,https://guide.syndicate.io/,@SyndicateDAO,https://discord.gg/8KurHSg2Wn,1644,
+0xSplits,2022-02-14,0x2ed6c4B5dA6378c7897AC67Ba9e43102Feb694EE ,,0x2ed6c4B5dA6378c7897AC67Ba9e43102Feb694EE ,"Abram, Will","0xSplits is an open-source, audited, and non-upgradeable protocol for efficiently splitting onchain income.","Splits are valuable whenever you want to allocate percentages of onchain income to different parties. We believe a composable, gas-optimized, easy-to-use splitter contract is an important primitive that will help usher in a new wave of onchain collaboration & giving back. Here are a few ways 0xSplits is being used today:
+
+Onchain Collaboration: Income from minting NFTs & royalties from secondary sales can be pointed to a Split's address. From then on, each Recipient will receive their portion of future income without the need for any manual disbursements or ongoing maintenance.
+Giving Back: Rather than listing a single donation address for an open source project and trusting one of the contributors to disperse the proceeds, you may simple create a Split and have all donations be automatically distributed amongst the contributors. The developers may also grant a multisig the ability to modify the Split, allowing them change the Split's composition in the future as contributors change.
+",https://www.0xsplits.xyz/,https://docs.0xsplits.xyz/,@0xSplits,https://discord.gg/WEUxXCTWK7,432,
+Jet Protocol,,,,,"Will Barnes, James Moreau",a decentralized protocol for borrowing and lending on the Solana Blockchain,"Jet Protocol will launch as an open source, non-custodial, borrowing and lending protocol
+on the Solana Blockchain (“the Protocol” and “Jet Protocol”). The Protocol will allow users
+to deposit supported tokens to the Protocol. They will receive interest back to incentivize
+participation. Those deposits will sit in a pool that is also used for users looking to take out
+a loan in supported tokens. Because of this, individual users are not matched, and the
+Protocol can create rules to govern ratios, supported tokens, and a variety of other needs.",https://www.jetprotocol.io/,https://docs.jetprotocol.io/jet-protocol/whitepaper,@JetProtocol,https://discord.com/invite/RW2hsqwfej,,https://coinmarketcap.com/currencies/jet-protocol/

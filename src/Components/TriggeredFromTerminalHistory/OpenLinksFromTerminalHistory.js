@@ -5,8 +5,7 @@ function OpeLinksFromTerminalHistory(props) {
    const openHyperstructures= () => window.open('https://jacob.energy/hyperstructures.html', "_blank")
    const openLps= () => window.open('/lps', "_blank")
 
-
-
+//change this to be not dumb at some point
     if (props.history[props.history.length - 1].value === '01101011 01100101 01111001') {
     return (
         <div active={openProtocols()}></div>
