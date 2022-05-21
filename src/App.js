@@ -7,6 +7,12 @@ const darkTheme = createTheme({
   palette: {
     mode: 'dark',
    //primary: '#00FF66',
+   primary: {
+      main: '#00FF66'
+    },
+    secondary: {
+      main: "#FFB000"
+    },
     divider: '#000',
     text: {
         primary: '#00FF66',

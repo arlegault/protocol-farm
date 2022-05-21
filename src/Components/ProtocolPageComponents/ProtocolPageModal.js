@@ -3,6 +3,10 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
+import LaunchIcon from '@mui/icons-material/Launch';
+import Grid from '@mui/material/Grid';
+
+
 
 const style = {
   position: 'absolute',
@@ -36,6 +40,8 @@ console.log(props.modalInfo)
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
+        <Grid container spacing={2}>
+          <Grid item xs={12}>
           <Typography id="modal-modal-title" variant="h4" component="h2">
             {props.modalInfo.protocol_name}
           </Typography>
@@ -60,9 +66,18 @@ console.log(props.modalInfo)
            <Typography id="modal-modal-description" sx={{ mt: 2 }}>
             Founder(s): {props.modalInfo.founders}
           </Typography>
+            </Grid>
+            <Grid item xs={10}>
            <Typography id="modal-modal-description" sx={{ mt: 2 }}>
             Wen Token: {props.modalInfo.wen_token}
           </Typography>
+          </Grid>
+           <Grid item xs={1}>
+           <Button variant="contained" href={props.modalInfo.url} endIcon={<LaunchIcon />}>
+        Visit
+      </Button>
+       </Grid>
+        </Grid>
         </Box>
       </Modal>
     </div>
