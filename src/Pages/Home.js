@@ -34,7 +34,6 @@ const structure = {
 
     },
     'protocols.sh': { content: '01101011 01100101 01111001'},
-    'submitProtocol.sh': { content: 'Access Granted: 19 21 2 13 9 20' },
     'liquidityProvider.sh': { content: '$$$$$$$$' },
     'README.md': { content: 'protocol-farm helps new protocols get discovered to ensure that WAGMI. Sign up on the whitelist to get early access. Submit a protocol to get points. Points will have value later. ' },
     'supportThisProject.sol': { content: 'Access Granted: 4 15 14 1 20 5'},

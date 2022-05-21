@@ -16,6 +16,7 @@ const style = {
   p: 4,
   color: '#FFB000',
 };
+//TODO: redirect to eth or sol scan depending on contract address. visit protocol website button. Styling.
 
 export default function BasicModal(props) {
   const [open, setOpen] = React.useState(false);
